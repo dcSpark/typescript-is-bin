@@ -13,9 +13,10 @@
   "description": "TypeScript transformer that generates run-time type-checks.",
   "main": "index.js",
   "files": [
-    "lib/*",
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "lib/transform-inline/*",
+    "lib/transform-inline/transformer.d.ts"
   ],
   "scripts": {
     "build": "rimraf lib/ && tsc --project tsconfig.json && copy-cli \"src/**/*.d.ts\" \"lib/\"",
